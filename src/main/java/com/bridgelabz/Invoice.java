@@ -38,4 +38,12 @@ public class Invoice {
     public int hashCode() {
         return Objects.hash(totalRides, totalFare, averageFare);
     }
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "InvoiceSummary{" +
+                "numofRides=" + totalRides +
+                ", totalFare=" + totalFare +
+                ", avrageFare=" + averageFare +
+                '}';
+    }
 }
