@@ -25,4 +25,14 @@ public class CabInvoiceTest {
         Invoice expcetedInvoice = new Invoice(3, 15, 5);
         Assert.assertEquals(expcetedInvoice, actualInvoice);
     }
+    @Test
+    public void givenUserIdShouldReturnTheInvoice() {
+        CabInvoice cabInvoice = new CabInvoice();
+        String userId = "abc@123";
+        Ride[] rides = {new Ride(2.0, 5), new Ride(0.1, 1)};
+        cabInvoice.addRides(userId, rides);
+        Invoice summary = cabInvoice.getInvoice(userId);
+        Invoice checkSummary = new Invoice(2, 10.0, 5);
+        Assert.assertEquals(summary, checkSummary);
+    }
 }
