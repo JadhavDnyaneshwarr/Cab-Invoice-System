@@ -15,4 +15,5 @@ public class Ride {
     public double getTime() {
         return time;
     }
+
 }

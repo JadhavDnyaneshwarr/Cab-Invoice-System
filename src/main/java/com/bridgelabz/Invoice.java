@@ -41,9 +41,9 @@ public class Invoice {
     @java.lang.Override
     public java.lang.String toString() {
         return "InvoiceSummary{" +
-                "numofRides=" + totalRides +
+                "totalRides=" + totalRides +
                 ", totalFare=" + totalFare +
-                ", avrageFare=" + averageFare +
+                ", averageFare=" + averageFare +
                 '}';
     }
 }
